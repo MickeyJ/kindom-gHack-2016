@@ -2,6 +2,13 @@ import React, { Component } from 'react'
 
 export default class Layout extends Component{
   render(){
+
+    var playerName = (
+      this.props.player
+        ?  <span id="player-name">{this.props.player.name}</span>
+        : ''
+    );
+
     return(
       <html lang="en">
         <head>
@@ -17,7 +24,6 @@ export default class Layout extends Component{
         <body>
 
           <div id="nav-header" className="container-fluid">
-            
             <header>
               <span>Kingdom</span>
             </header>
@@ -26,11 +32,8 @@ export default class Layout extends Component{
               <a href="/" >Home</a>
               <span> | </span>
               <a href="/auth" >Login/Signup</a>
-              <span> | </span>
-              <span id="player-name">{this.props.player.name}</span>
-
+              {playerName}
             </nav>
-            
           </div>
 
           <main>

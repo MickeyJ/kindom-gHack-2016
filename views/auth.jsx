@@ -5,7 +5,7 @@ import Layout from './layout/layout'
 export default class Contact extends Component{
   render(){
     return(
-      <Layout>
+      <Layout player={this.props.player}>
 
         <form className="form-group" action="" >
           <input className="form-control" type="text" name="name" placeholder="Name"/>

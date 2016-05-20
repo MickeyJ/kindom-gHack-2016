@@ -13,8 +13,7 @@ export default class Index extends Component{
         <MapComponent />
 
         <div className="container-fluid">
-          <InfoBox />
-          <InfoBox />
+          <InfoBox zips={this.props.player.zips}/>
           <InfoBox />
           <InfoBox />
         </div>

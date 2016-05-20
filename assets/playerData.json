@@ -4,24 +4,56 @@
     "name": "Bob",
     "email": "bob@mail.com",
     "password": "asdf",
-    "zip": 80304,
-    "isKing": false,
-    "units": {
-      "archer": 1,
-      "cavalry": 1
-    }
+    "zips": [
+      {
+        "code": 80304,
+        "isKing": false,
+        "units": {
+          "archer": 20,
+          "cavalry": 5,
+          "knight": 100
+        }
+     },
+      {
+        "code": 80301,
+        "isKing": false,
+        "units": {
+          "archer": 20,
+          "cavalry": 5,
+          "knight": 100
+        }
+      }
+    ]
   },
 
   {
-    "id": 1,
-    "name": "Bob",
-    "email": "bob@mail.com",
-    "password": "asdf",
-    "zip": 80304,
-    "isKing": false,
-    "units": {
-      "archer": 1,
-      "cavalry": 1
-    }
+    "id": 2,
+    "name": "Suzy",
+    "email": "suzy@mail.com",
+    "password": "qwer",
+    "zips": [{
+      "code": 80301,
+      "isKing": false,
+      "units": {
+        "archer": 20,
+        "cavalry": 5,
+        "knight": 100
+      }
+    }]
+  },
+  {
+    "id": 3,
+    "name": "Joe",
+    "email": "joe@mail.com",
+    "password": "zxcv",
+    "zips": [{
+      "code": 80306,
+      "isKing": false,
+      "units": {
+        "archer": 20,
+        "cavalry": 5,
+        "knight": 100
+      }
+    }]
   }
 ]

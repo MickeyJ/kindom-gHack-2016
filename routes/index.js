@@ -6,6 +6,7 @@ var getPlayer = (id) =>(
   players.find(x => x.id === id)
 )
 
+
 router.get('/', function(req, res, next) {
   res.render('home', {
     player: getPlayer(1)
@@ -13,7 +14,9 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/auth', function(req, res, next) {
-  res.render('auth');
+  res.render('auth', {
+    player: getPlayer(1)
+  });
 });
 
 module.exports = router;
