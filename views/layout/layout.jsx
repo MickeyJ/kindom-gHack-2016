@@ -14,9 +14,9 @@ export default class Layout extends Component{
 
           <script src="bower_components/jquery/dist/jquery.min.js"></script>
         </head>
-        <body className="container-fluid">
+        <body>
 
-          <div id="nav-header">
+          <div id="nav-header" className="container-fluid">
             
             <header>
               <span>Kingdom</span>
@@ -26,6 +26,9 @@ export default class Layout extends Component{
               <a href="/" >Home</a>
               <span> | </span>
               <a href="/auth" >Login/Signup</a>
+              <span> | </span>
+              <span id="player-name">{this.props.player.name}</span>
+
             </nav>
             
           </div>

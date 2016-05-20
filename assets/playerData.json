@@ -2,7 +2,26 @@
   {
     "id": 1,
     "name": "Bob",
+    "email": "bob@mail.com",
+    "password": "asdf",
     "zip": 80304,
-    "units": 1
+    "isKing": false,
+    "units": {
+      "archer": 1,
+      "cavalry": 1
+    }
+  },
+
+  {
+    "id": 1,
+    "name": "Bob",
+    "email": "bob@mail.com",
+    "password": "asdf",
+    "zip": 80304,
+    "isKing": false,
+    "units": {
+      "archer": 1,
+      "cavalry": 1
+    }
   }
 ]
