@@ -1,0 +1,43 @@
+#nav-header{
+
+  height: 80px;
+  line-height: 80px;
+
+  header{
+    float: left;
+
+
+    span{
+      font-size: 3em;
+    }
+  }
+
+
+  nav{
+    float: right;
+
+    a{
+      color: DodgerBlue;
+      transition: all 0.1s;
+
+      &:hover{
+        color: Crimson;
+        text-decoration: none;
+      }
+    }
+
+    .active-link{
+      color: FireBrick;
+    }
+
+  }
+
+  &:after{
+    content: '';
+    display: table;
+    clear: both;
+
+  }
+
+
+}
